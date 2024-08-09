@@ -91,6 +91,13 @@ h3 {
   display: flex;
   justify-content: space-between;
   width: 200px;
+  align-items: center;
+}
+.buttons-container {
+  display: flex;
+  justify-content: space-between; /* Space between the buttons */
+  align-items: center; /* Aligns buttons vertically */
+  width: 150px; /* Adjust width as necessary */
 }
 
 .fa {
