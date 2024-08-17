@@ -70,8 +70,7 @@ h3 {
   background: #242323;
   border-radius: 5px;
   height: 100%;
-  /* change this to show progress */
-  width: 66%;
+  width: %;
   transition: width 0.1s linear;
 }
 
@@ -85,27 +84,50 @@ h3 {
 /* Controls */
 .player-controls {
   position: absolute;
-  bottom: 20px;
+  bottom: 150px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   justify-content: space-between;
-  width: 200px;
+  width: 180px;
   align-items: center;
 }
+
+#play {
+  font-size: 30px; /* Adjust this value to make the play button larger */
+  color: hsl(0, 0%, 0%); /* You can adjust the color if needed */
+}
+
+
+
 .buttons-container {
   display: flex;
   justify-content: space-between; /* Space between the buttons */
   align-items: center; /* Aligns buttons vertically */
   width: 150px; /* Adjust width as necessary */
+  cursor: pointer;
 }
 
-.fa {
+.fa-regular fa-circle-play fa-beat {
+  width: 100px;
+}
+
+.fa-play {
+  font-size: 60px;
+}
+
+
+
+.fas {
   font-size: 30px;
   color: rgb(129, 129, 129);
   margin-right: 30px;
   cursor: pointer;
   user-select: none;
+}
+
+.fas:hover {
+  filter: brightness(80%);
 }
 
 .fa:first-child {
@@ -117,14 +139,21 @@ h3 {
   50% { opacity: 1; }
   100% { opacity: 0; }
 }
+#prev, #next, #pause {
+  font-size: 30px;
+  color: #131111;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;  /* Smooth transition */
+}
 
-.fa-fade {
-  animation: fadeInOut 2s infinite ease-in-out;
+#prev:hover, #next:hover, #play:hover, #pause{
+  transform: scale(1.2); /* Slightly increase the size on hover */
+  color: #ff6347;
 }
 
 
 .main-button {
-  font-size: 40px;
+  font-size: 60px;
   position: relative;
   top: 3px;
 }
