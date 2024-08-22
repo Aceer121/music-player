@@ -91,7 +91,9 @@ h3 {
   justify-content: space-between;
   width: 180px;
   align-items: center;
+  z-index: -1;
 }
+
 
 #play {
   font-size: 30px; /* Adjust this value to make the play button larger */
